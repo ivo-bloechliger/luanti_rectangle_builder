@@ -9,7 +9,10 @@ Currently supported blocks are
 When not playing in creative mode, you have to have enough blocks in your inventory.
 
 ## Usage
-Place 
+Place a rectangle_builder block anywhere. Then place
+a second such block in a straight axis at a distance of at most 30 blocks. The line between them must be completely free. Then the line will get filled with blocks and the two blocks at the end will indicate the direction in wich a rectangle might be filled.
+
+Then place a third block in a straight axis from one of the two blocks (see screenshot above). The rectangle will be filled (except for places containing other stuff).
 
 ## Installation
 
