@@ -109,7 +109,7 @@ for _, blockname in pairs(supported_blocks) do
                                 end
                                 -- In case we have an inventory, check if there are sufficient blocks available
                                 if inventory ~= nil then
-                                    local stack = itemstack(blockname.." "..(d*(oldd+1)-1))
+                                    local stack = ItemStack(blockname.." "..placed)
                                     if not inventory:contains_item("main", stack) then
                                         minetest.log("not enough "..simplename)
                                         -- skip to next spacial direction
@@ -130,7 +130,7 @@ for _, blockname in pairs(supported_blocks) do
                                 end
                                 -- Adjust inventory, if we have to
                                 if inventory ~= nil then
-                                    local stack = itemstack(blockname.." "..placed)
+                                    local stack = ItemStack(blockname.." "..placed)
                                     inventory:remove_item("main", stack)
                                 end
 
@@ -139,7 +139,7 @@ for _, blockname in pairs(supported_blocks) do
                             elseif othername=="rectangle_builder:non_oriented_"..simplename and dist>1 then
                                 -- Check if enough available blocks in inventory (if neccessary)
                                 if inventory ~= nil then
-                                    local stack = itemstack(blockname.." "..(d-1))
+                                    local stack = ItemStack(blockname.." "..(dist-1))
                                     if not inventory:contains_item("main", stack) then
                                         minetest.log("not enough "..simplename)
                                         -- skip to next spacial direction
