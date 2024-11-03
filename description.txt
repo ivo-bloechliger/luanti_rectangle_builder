@@ -1,0 +1,5 @@
+The Rectangle Builder Mod lets you fill rectangles with a certain type of blocks 
+by putting special blocks at three corners of a rectangle, provided you have
+enough such blocks in your inventory.
+Currently implemented are the default blocks
+"cobble", "glass", "pine_wood", "dirt", "mese", "diamondblock" and "silver_sand".

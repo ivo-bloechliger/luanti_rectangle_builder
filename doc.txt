@@ -1,0 +1,9 @@
+
+Location of default mods:
+
+/usr/share/games/minetest/games/minetest_game/mods/
+
+https://api.minetest.net/
+
+https://minetest.org/modbook/index.html
+
