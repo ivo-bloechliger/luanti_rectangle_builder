@@ -90,8 +90,7 @@ for _, blockname in pairs(supported_blocks) do
                             -- About to fill a rectangle?
                             if othername=="rectangle_builder:oriented_"..simplename then
                                 local othermeta = core.get_meta(otherpos)
-                                -- https://minetest.org/modbook/chapters/node_metadata.html
-                                -- minetest.log("found node " .. tostring(nodemeta:to_table()))
+                                -- https://rubenwardy.com/minetest_modding_book/en/map/storage.html
                                 local otherdir = tonumber(othermeta:to_table().fields.dir)
                                 local otherdist = tonumber(othermeta:to_table().fields.dist)
                                 local othervec = dirs[otherdir]
