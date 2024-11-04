@@ -5,5 +5,5 @@ Location of default mods:
 
 https://api.minetest.net/
 
-https://minetest.org/modbook/index.html
+https://rubenwardy.com/minetest_modding_book/en/index.html
 
